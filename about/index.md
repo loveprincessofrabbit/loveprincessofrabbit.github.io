@@ -4,7 +4,7 @@ type: page
 title: About me
 ---
 
- * **Name:** 姚奕涛
- * **Email:** [simpleyyt@gmail.com](mailto:simpleyyt@gmail.com)
- * **WeiBo:** [摇一摇SimpleLife](http://www.weibo.com/u/1836017133)
- * **Github:** [Simpleyyt](https://github.com/Simpleyyt)
+ * **Name:** Miao Chiahao
+ * **Email:** [miaojiahao@hnu.edu.cn](mailto:miaojiahao@hnu.edu.cn)
+ * **WeiBo:** [村雨其实没有雨](http://www.weibo.com/u/5451714789)
+ * **Github:** [Miao Chiahao](https://github.com/miaochiahao)
