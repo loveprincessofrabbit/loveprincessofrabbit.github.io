@@ -113,7 +113,7 @@ links:
 excerpt_separator: <!--more-->
 
 #### Comment
-duoshuo_shortname: simpleyyt   ## e.g. wuchong   your duoshuo short name. #这里需要配置，应该是评论区
+duoshuo_shortname: cunyu   ## e.g. wuchong   your duoshuo short name. #这里需要配置，应该是评论区
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
 
 #### Share button
