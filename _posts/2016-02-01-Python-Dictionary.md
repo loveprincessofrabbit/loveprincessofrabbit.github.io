@@ -26,8 +26,7 @@ category: Python
 * 过程中出现了unicode和其他编码不匹配的情况，查找后发现中文标点这个字符串这个对象的类型为str而不是unicode，于是进行转换
 
 ##代码如下
-`# -*- coding:utf-8 -*-   
-  
+` # -*- coding:utf-8 -*-     
 import urllib2  
 from bs4 import BeautifulSoup  
 import re  
@@ -42,12 +41,11 @@ while True:
     soup=BeautifulSoup(html)  
     right=("→")  
     right=right.decode('utf-8')  
-    # To find all "collinsOrder" and "examples"  
+    #To find all "collinsOrder" and "examples"  
     collins=str(soup.find_all(id='collinsResult'))  
     collins=collins.replace('<b>',' ')  
     collins=collins.replace('<//b>',' ')  
     collins=BeautifulSoup(collins)  
-  
     for string in collins.stripped_strings:  
         pattern=re.compile('[\.\?!":]|.∗|\/')  
         match=pattern.search(string)  
@@ -57,7 +55,7 @@ while True:
             continue  
         if match:  
             print string  
-    #       print type(string)   # To see what type is the item "string" and to fix the bug !  
+    #       print type(string)   #To see what type is the item "string" and to fix the bug !  
         elif string[-1]==("。").decode('utf-8'):  
             print string  
         elif string[-1]==("”").decode('utf-8'):  
