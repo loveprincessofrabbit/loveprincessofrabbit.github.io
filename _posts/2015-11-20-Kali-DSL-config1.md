@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 tags: Kali Linux
 title: "Kali Linux 2.0 DSL配置"
 category: Kali Linux
