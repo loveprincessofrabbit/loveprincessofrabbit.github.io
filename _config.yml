@@ -108,12 +108,12 @@ toc:
 links:
   #此处应添加链接
   Honsen的博客: http://honsen.top
-  莫小西的博客: http://momomoxiaoxi.com
+  默小西的博客: http://momomoxiaoxi.com
 
 excerpt_separator: <!--more-->
 
 #### Comment
-duoshuo_shortname: cunyu   ## e.g. wuchong   your duoshuo short name. #这里需要配置，应该是评论区
+duoshuo_shortname: chiahao   ## e.g. wuchong   your duoshuo short name. #这里需要配置，应该是评论区
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
 
 #### Share button
