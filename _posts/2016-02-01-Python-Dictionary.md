@@ -81,4 +81,5 @@ while True:
             print "break!"  
         elif string==("]").decode('utf-8'):  
             print "break!"  
-    print "\n"  ```
+    print "\n"  
+```
