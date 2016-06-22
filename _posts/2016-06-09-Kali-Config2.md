@@ -32,11 +32,13 @@ category: Kali Linux
 
 ##虚拟机配置
 此处针对虚拟机配置过程中内核模块未载入问题（对于64位电脑，Kali 2.0）
+```
 	wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.3.4-wily/linux-headers-4.3.4-040304_4.3.4-040304.201601230132_all.deb  
 	wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.3.4-wily/linux-headers-4.3.4-040304-generic_4.3.4-040304.201601230132_amd64.deb  
 	wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.3.4-wily/linux-image-4.3.4-040304-generic_4.3.4-040304.201601230132_amd64.deb  
 	sudo dpkg -i linux-headers-4.3.4*.deb linux-image-4.3.4*.deb  
 	sudo reboot
+```
 
 ##IceWeasel汉化
 	sudo apt-get remove iceweasel
