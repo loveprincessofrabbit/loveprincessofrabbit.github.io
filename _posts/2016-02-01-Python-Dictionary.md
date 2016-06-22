@@ -27,7 +27,8 @@ category: Python
 * 过程中出现了unicode和其他编码不匹配的情况，查找后发现中文标点这个字符串这个对象的类型为str而不是unicode，于是进行转换
 
 ##代码如下
-` # -*- coding:utf-8 -*-     
+```python
+ # -*- coding:utf-8 -*-     
 import urllib2  
 from bs4 import BeautifulSoup  
 import re  
@@ -80,4 +81,5 @@ while True:
             print "break!"  
         elif string==("]").decode('utf-8'):  
             print "break!"  
-    print "\n"  `
+    print "\n"  
+    ```
