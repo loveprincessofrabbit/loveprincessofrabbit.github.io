@@ -19,6 +19,7 @@ category: SQL注入
 ## SQL注入点的判断
 
 ### 网页链接特征
+
 * http://www.******.com/***.asp?id=xx (ASP注入)
 * http://www.******.com/***.php?id=xx (PHP注入)
 * http://www.******.com/***.jsp?id=xx (JSP注入)
@@ -34,10 +35,12 @@ category: SQL注入
 ## 防止注入
 简单来说只需要在 `?id=xx` 这里判断下输入进的 `xx` 是否为纯数字即可，若不是则拒绝执行。
 对于PHP
+
 ```PHP
 if (!is_numeric($id)){
 	echo "防止sql注入"
 	echo "<hr>"
 }
 ```
+
 通过防止注入方法，虽然可以判断出存在SQL注入漏洞，但是不能进一步查询
