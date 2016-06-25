@@ -15,14 +15,14 @@ category: SQL注入
 
 例如在我们输入用户名为 `admin` 密码为 `123` 时，SQL查询语句为
 
-{% highlight php %}
+{% highlight sql %}
 SELECT * FROM admin WHERE Name='admin' and passWord='123'
 {% endhighlight %}
 
 
 而我们通过构造语句在用户名处输入 `'or 1=1 --` 密码为任意值如 `111`此时查询语句变为
 
-{% highlight php %}
+{% highlight sql %}
 SELECT * FROM admin WHERE Name=''or 1=1 --' and passWord='111'
 {% endhighlight %}
 
