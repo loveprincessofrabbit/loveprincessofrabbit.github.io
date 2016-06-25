@@ -4,7 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-#highlighter: pygments
+highlighter: pygments
 
 assets: http://miaochiahao.github.io/assets
 baseurl: http://miaochiahao.github.io
@@ -25,7 +25,7 @@ markdown: kramdown
 #    - with_toc_data
 kramdown:
     input: GFM
-highlighter: rouge
+#highlighter: rouge
 
 title : Miao Chiahao's Blog
 tagline: 此后如竟没有炬火，我便是唯一的光
