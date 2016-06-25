@@ -20,8 +20,8 @@ apt-get update
 
 ## 网络设置
 
-`apt-get install pppoe pppoeconf`
-`nm-connection-editor` (DSL网络在此处添加)`
+`apt-get install pppoe pppoeconf`   
+`nm-connection-editor` (DSL网络在此处添加)
 
 ## 输入法安装
 
