@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: SQL注入 渗透测试
-title: "SQL注入学习（一）"
+title: "SQL注入（一）"
 category: SQL注入
 ---
 
