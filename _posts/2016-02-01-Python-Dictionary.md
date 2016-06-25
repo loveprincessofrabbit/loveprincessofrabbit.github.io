@@ -31,7 +31,7 @@ category: Python
 
 ## 代码如下
 
-```python
+{% highlight python %}
  # -*- coding:utf-8 -*-     
 import urllib2  
 from bs4 import BeautifulSoup  
@@ -86,4 +86,4 @@ while True:
         elif string==("]").decode('utf-8'):  
             print "break!"  
     print "\n"  
-```
+{% endhighlight %}
