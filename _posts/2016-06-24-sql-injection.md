@@ -20,13 +20,15 @@ category: SQL注入
 
 ### 网页链接特征
 
-* http://www.******.com/***.asp?id=xx (ASP注入)
-* http://www.******.com/***.php?id=xx (PHP注入)
-* http://www.******.com/***.jsp?id=xx (JSP注入)
-* http://www.******.com/***.jspx?id=xx （JSPX注入）
-* http://www.******.com/***.asp?id=xx&page=99 （有两个参数，注入时要注意参数的确认）
-* http://www.******.com/index/new/id/8 (伪静态)
-* http://www.******.com/index/new/php-8.html (伪静态)
+
+>* http://www.******.com/***.asp?id=xx (ASP注入)
+>* http://www.******.com/***.php?id=xx (PHP注入)
+>* http://www.******.com/***.jsp?id=xx (JSP注入)
+>* http://www.******.com/***.jspx?id=xx （JSPX注入）
+>* http://www.******.com/***.asp?id=xx&page=99 （有两个参数，注入时要注意参数的确认）
+>* http://www.******.com/index/new/id/8 (伪静态)
+>* http://www.******.com/index/new/php-8.html (伪静态)
+
 
 ### 判断是否存在注入漏洞
 * 单引号法：在链接后加上一个单引号，若页面不能正常显示，浏览器返回异常信息，可能存在漏洞

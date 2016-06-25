@@ -9,22 +9,25 @@ category: Kali Linux
 
 ## 换源
 
-	leafpad /etc/apt/sources.list
-    
-	#Source from USTC
-	deb http://mirrors.ustc.edu.cn/kali sana main non-free contrib
-	deb-src http://mirrors.ustc.edu.cn/kali sana main non-free contrib
-	deb http://mirrors.ustc.edu.cn/kali-security sana/updates main contrib non-free
-	apt-get update
+{% highlight shell %}
+```
+leafpad /etc/apt/sources.list
+#Source from USTC
+deb http://mirrors.ustc.edu.cn/kali sana main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali sana main non-free contrib
+deb http://mirrors.ustc.edu.cn/kali-security sana/updates main contrib non-free
+apt-get update
+```
+{% endhighlight %}
 
 ## 网络设置
 
-	apt-get install pppoe pppoeconf
-	nm-connection-editor` (DSL网络在此处添加)
+`apt-get install pppoe pppoeconf`
+`nm-connection-editor` (DSL网络在此处添加)`
 
 ## 输入法安装
 
-	apt-get install fcitx fcitx-table-wbpy
+`apt-get install fcitx fcitx-table-wbpy`
 
 
 ## 字体安装
@@ -39,6 +42,7 @@ category: Kali Linux
 
 此处针对虚拟机配置过程中内核模块未载入问题（对于64位电脑，Kali 2.0）
 
+{% highlight shell %}
 ```
 wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.3.4-wily/linux-headers-4.3.4-040304_4.3.4-040304.201601230132_all.deb  
 wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.3.4-wily/linux-headers-4.3.4-040304-generic_4.3.4-040304.201601230132_amd64.deb  
@@ -46,9 +50,14 @@ wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.3.4-wily/linux-image-4.3.4-040304
 sudo dpkg -i linux-headers-4.3.4*.deb linux-image-4.3.4*.deb  
 sudo reboot
 ```
+{% endhighlight %}
 
 ## IceWeasel汉化
 
-	sudo apt-get remove iceweasel
-	sudo apt-get install iceweasel
-	sudo apt-get install iceweasel-l10n-zh-cn
+{% highlight shell %}
+```
+sudo apt-get remove iceweasel
+sudo apt-get install iceweasel
+sudo apt-get install iceweasel-l10n-zh-cn
+```
+{% endhighlight %}
