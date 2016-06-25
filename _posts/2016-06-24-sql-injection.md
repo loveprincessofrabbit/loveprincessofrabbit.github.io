@@ -36,7 +36,7 @@ category: SQL注入
 简单来说只需要在 `?id=xx` 这里判断下输入进的 `xx` 是否为纯数字即可，若不是则拒绝执行。
 对于PHP
 
-```PHP
+```php
 if (!is_numeric($id)){
 	echo "防止sql注入"
 	echo "<hr>"
