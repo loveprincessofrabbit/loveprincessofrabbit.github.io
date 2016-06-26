@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: SQL注入 渗透测试
-title: "SQL注入（三）--MySQL注入技术"
+title: "SQL注入（三）"
 category: SQL注入
 ---
 
