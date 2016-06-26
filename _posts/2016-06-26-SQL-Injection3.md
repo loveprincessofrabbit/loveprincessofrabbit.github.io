@@ -33,6 +33,7 @@ category: SQL注入
 
 ### 注入类型判断
 
+
 #### 注入类型
 
 * 数字型注入 `select * from news where id=$id`
@@ -53,3 +54,6 @@ category: SQL注入
 
 
 ## MySQL相关语法
+
+`order by n` 此语法意为按照第n个字段进行排序，n应从1开始一直试验到报错。目的是用这种方法来判断字段数
+`union select` 联合查询
