@@ -3,6 +3,7 @@ layout: post
 tags: SQL注入 渗透测试
 title: "SQL注入（二）"
 category: SQL注入
+excerpt: 万能密码漏洞
 ---
 
 ## OR漏洞简述

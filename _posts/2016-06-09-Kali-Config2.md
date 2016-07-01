@@ -2,7 +2,8 @@
 layout: post
 tags: Kali Linux
 title: "Kali Linux 2.0的一些基本配置"
-category: Kali Linux
+category: KaliLinux
+excerpt: 对Kali Linux的一些配置参考
 ---
 
 装过很多次Kali2.0了，每次装完都要重新去搜集一些命令去调系统配置，这次装完后记录了一下，希望能给大家一些便利

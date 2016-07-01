@@ -3,6 +3,7 @@ layout: post
 tags: SQL注入 渗透测试
 title: "SQL注入（三）"
 category: SQL注入
+excerpt: MySQL数据库常见注入技术以及不同版本数据库具体情况分析
 ---
 
 ## MySQL数据库常见注入攻击技术

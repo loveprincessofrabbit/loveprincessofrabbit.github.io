@@ -3,6 +3,7 @@ layout: post
 tags: SQL注入 渗透测试
 title: "SQL注入（一）"
 category: SQL注入
+excerpt: SQL注入原理、注入点的判断及简单防护
 ---
 
 上次在蓝盾的时候第一次接触到了SQL注入和SQLmap工具，想着考完以后系统的学一下SQL注入。这个系列的博文都是在i春秋学习的笔记和自己实际操作的过程。

@@ -3,6 +3,7 @@ layout: post
 title: "SQL注入（四）"
 category: SQL注入
 tags: SQL注入 渗透测试
+excerpt: 手注查询字段数、数据库、用户、版本信息以及具体数据
 ---
 
 一天不更就觉得是对生命的浪费啊魂淡(,,･∀･)ﾉ゛

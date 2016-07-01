@@ -3,6 +3,7 @@ layout: post
 tags: Python
 title: "基于有道词典的python命令行词典程序"
 category: Python
+excerpt: 用Python写的命令行网络词典
 ---
 
 ## 思路
