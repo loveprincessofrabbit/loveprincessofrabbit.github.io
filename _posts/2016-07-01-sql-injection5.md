@@ -3,6 +3,7 @@ layout: post
 title: "SQL注入（五）"
 category: SQL注入
 tags: SQL注入 渗透测试
+excerpt: 通过转化为十六进制和进行宽字节注入绕过一些安全机制
 ---
 
 ## 突破magic_quotes_gpc与addslashes()
