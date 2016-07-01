@@ -49,3 +49,10 @@ select * from user where username='1運''
 {% highlight sql %}
 mysql_query("SET character_set_client=binary")
 {% endhighlight %}
+
+## 哪些地方没有魔术引号的保护
+
+* $_SERVER变量
+* getenv()得到的变量
+* $HTTP_RAW_POST_DATA与PHP输入、输出流
+（这些并不懂
