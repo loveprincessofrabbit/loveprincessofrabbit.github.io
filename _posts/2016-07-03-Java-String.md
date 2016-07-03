@@ -68,7 +68,7 @@ System.out.println("StringBuilder内置append方法耗时为"+time+"毫秒");
 ## 不同方式所耗时间的比较
 
 |方法|j=1000|j=10000|j=100000|j=1000000|
-|:----:|:------:|:----:|:----:|:-----:|
+|----|:------:|:----:|:----:|:-----:|
 |字符串相加|5|198|10101|1290796|
 |String.concat()|2|97|4278|553904
 |StringBuffer.append()|0|3|6|20|
@@ -76,7 +76,7 @@ System.out.println("StringBuilder内置append方法耗时为"+time+"毫秒");
 
 嗯，在等j=1000000的时候我起身倒了杯水…倒了杯水…倒了杯水…又倒了一杯
 
-效果还是<del/>十分明显</del>令人发指的，看来不同的方法执行同一个任务在任务量巨大时的确有差异
+效果还是~~~十分明显~~~令人发指的，看来不同的方法执行同一个任务在任务量巨大时的确有差异
 
 
 ## 不同方式连接字符串的机制分析
@@ -90,7 +90,7 @@ String类是不可变的，会在内存中造成大量冗余。`"1"+"2"+"3"+..."
 `concat()`函数的实质是计算新的字符串的长度，根据这个长度新建了一个字符型数组，使其长度为原有字符串长度与新增字符串长度之和，又将原来的文字后面加入了新的字符型数组，其本质还是数组的合并操作。
 
 关于`copyOf()`函数
->Copies the specified array, truncating or padding with null characters (if necessary) so the copy has the specified length. For all indices that are valid in both the original array and the copy, the two arrays will contain identical values. For any indices that are valid in the copy but not the original, the copy will contain '\\u000'. Such indices will exist if and only if the specified length is greater than that of the original array.
+> Copies the specified array, truncating or padding with null characters (if necessary) so the copy has the specified length. For all indices that are valid in both the original array and the copy, the two arrays will contain identical values. For any indices that are valid in the copy but not the original, the copy will contain '\\u000'. Such indices will exist if and only if the specified length is greater than that of the original array.
 
 ### StringBuffer内置函数append()
 
