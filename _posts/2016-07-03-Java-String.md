@@ -107,6 +107,49 @@ StringBuffer是一个可变的类，其大小和内容均可以随时更改，�
 
 StringBuilder同StringBuffer，但是是非线程安全的。关键在于第三种和第四种方法的比较
 
+## 反编译分析
+
+使用`javap -c`命令，可以对其进行反编译分析，实际上在JVM中执行的内容如下：
+
+```
+{% highlight java %}
+//使用加法连接字符串
+Compiled from "Test.java"
+public class Test {
+  public Test();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+       
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc           #2                  // String abc  |创建了abc
+       2: astore_1
+       3: iconst_0
+       4: istore_2
+       5: iload_2
+       6: sipush        1000
+       9: if_icmpge     38
+      12: new           #3                  // class java/lang/StringBuilder  |实际上优化后创建了StringBuilder对象来操作
+      15: dup
+      16: invokespecial #4                  // Method java/lang/StringBuilder."<init>":()V
+      19: aload_1
+      20: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      23: ldc           #6                  // String def |创建了def
+      25: invokevirtual #5                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; |调用了StringBuilder的方法进行增加
+      28: invokevirtual #7                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      31: astore_1
+      32: iinc          2, 1
+      35: goto          5                   // 跳转到第5行，也就是执行了我们设置的循环
+      38: return
+}
+{% end highlight %}
+```
+
+分析：实际上来看，在使用加法连接字符串时JVM自动建立了一个`StringBuilder`对象，并使用内置函数`append()`来进行连接，可是问题在于在跳转后，又重新建立了一个`StringBuilder`对象，并再次调用函数进行连接，这样每次循环都会建立一个`StringBuilder`对象，降低了效率。
+
+
 ## Java栈操作相关指令
 
 |操作码|操作数|说明|
