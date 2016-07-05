@@ -105,7 +105,7 @@ StringBuffer是一个可变的类，其大小和内容均可以随时更改，�
 
 ### StringBuilder内置函数append()
 
-StringBuilder同StringBuffer，但是是非线程安全的。
+StringBuilder同StringBuffer，但是是非线程安全的。关键在于第三种和第四种方法的比较
 
 ## 反编译分析
 
