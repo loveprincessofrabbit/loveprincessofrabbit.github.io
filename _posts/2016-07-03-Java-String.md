@@ -65,7 +65,7 @@ time = end - start;
 System.out.println("StringBuilder内置append方法耗时为"+time+"毫秒");
 {% endhighlight %}
 
-## 不同方式所耗时间的比较
+## 不同方式所耗时间的比较（单位：毫秒）
 
 |方法|j=1000|j=10000|j=100000|j=1000000|
 |----|------|----|----|-----|
