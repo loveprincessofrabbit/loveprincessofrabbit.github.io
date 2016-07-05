@@ -112,6 +112,7 @@ StringBuilder同StringBuffer，但是是非线程安全的。关键在于第三�
 使用`javap -c`命令，可以对其进行反编译分析，实际上在JVM中执行的内容如下：
 
 {% highlight java %}
+```
 //使用加法连接字符串
 Compiled from "Test.java"
 public class Test {
@@ -120,7 +121,7 @@ public class Test {
        0: aload_0
        1: invokespecial #1                  // Method java/lang/Object."<init>":()V
        4: return
-
+       
   public static void main(java.lang.String[]);
     Code:
        0: ldc           #2                  // String abc  |创建了abc
@@ -143,12 +144,14 @@ public class Test {
       35: goto          5                   // 跳转到第5行，也就是执行了我们设置的循环
       38: return
 }
+```
 {% end highlight %}
 
 分析：实际上来看，在使用加法连接字符串时JVM自动建立了一个`StringBuilder`对象，并使用内置函数`append()`来进行连接，可是问题在于在跳转后，又重新建立了一个`StringBuilder`对象，并再次调用函数进行连接，这样每次循环都会建立一个`StringBuilder`对象，降低了效率。
 
 
 {% highlight java %}
+```
 //使用内置函数concat()连接
 Compiled from "Test2.java"
 public class Test2 {
@@ -157,7 +160,7 @@ public class Test2 {
        0: aload_0
        1: invokespecial #1                  // Method java/lang/Object."<init>":()V
        4: return
-
+       
   public static void main(java.lang.String[]);
     Code:
        0: ldc           #2                  // String abc
@@ -175,11 +178,13 @@ public class Test2 {
       22: goto          5
       25: return
 }
+```
 {% end highlight %}
 
 分析：这个没有什么悬念，可以看到是调用了`String.concat()`函数来进行连接操作，具体原理上文已经猜想分析过，在此得到了验证。
 
 {% highlight java %}
+```
 //使用StringBuffer内置函数append()连接
 Compiled from "Test3.java"
 public class Test3 {
@@ -188,7 +193,7 @@ public class Test3 {
        0: aload_0
        1: invokespecial #1                  // Method java/lang/Object."<init>":()V
        4: return
-
+       
   public static void main(java.lang.String[]);
     Code:
        0: new           #2                  // class java/lang/StringBuffer
@@ -209,12 +214,14 @@ public class Test3 {
       29: goto          12
       32: return
 }
+```
 {% end highlight %}
 
 分析：可以看出跳转到12行后继续执行的是`StringBuffer.append()`函数，也就是说全程只建立了一个`StringBuffer`对象，效率会更高。
 
 
 {% highlight java %}
+```
 //使用StringBuilder内置函数append()进行连接
 public class Test4 {
   public Test4();
@@ -222,7 +229,7 @@ public class Test4 {
        0: aload_0
        1: invokespecial #1                  // Method java/lang/Object."<init>":()V
        4: return
-
+       
   public static void main(java.lang.String[]);
     Code:
        0: new           #2                  // class java/lang/StringBuilder
@@ -243,6 +250,7 @@ public class Test4 {
       29: goto          12
       32: return
 }
+```
 {% end highlight %}
 
 分析：这个主要来与第一个方法做一个对比吧，因为都使用了`StringBuilder`对象内置的`append()`方法，最后一种方法直接生成了一个`StringBuilder`对象并进行操作，这样显然效率更高。
