@@ -243,10 +243,10 @@ public class Test4 {
       29: goto          12
       32: return
 }
+{% end highlight %}
 
 分析：这个主要来与第一个方法做一个对比吧，因为都使用了`StringBuilder`对象内置的`append()`方法，最后一种方法直接生成了一个`StringBuilder`对象并进行操作，这样显然效率更高。
 
-{% end highlight %}
 
 ## Java栈操作相关指令
 |操作码|操作数|说明|
@@ -260,9 +260,9 @@ public class Test4 {
 |sipush|一个short类型的数|将short类型的数转换为int类型的数，然后压入栈|
 |new|index|在堆中创建一个新的对象，将其引用压入栈|
 |dup|无|复制栈顶部的一个字|
-|invokespecial||调用实例方法（静态绑定，速度快）|
+|invokespecial|无|调用实例方法（静态绑定，速度快）|
 |aload_1|无|将位置为1的对象引用局部变量压入栈|
-|invokevirtual||调用实例方法（动态绑定）|
+|invokevirtual|无|调用实例方法（动态绑定）|
 |iinc|vindex,const|把常量与一个位于vindex位置的int类型局部变量相加|
 
 
