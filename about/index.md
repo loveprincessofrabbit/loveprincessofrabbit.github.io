@@ -1,11 +1,8 @@
 ---
 layout: page
 type: page
-title: About me
+title: 个人概况
 ---
-
-## 个人概况
-
 ### 专业
 
 * 纯正的英语专业(,,･∀･)ﾉ゛
