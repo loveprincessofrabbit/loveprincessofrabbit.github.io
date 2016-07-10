@@ -6,6 +6,10 @@ category: KaliLinux
 excerpt: Kali Linux的有线网络配置
 ---
 
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](http://d3.freep.cn/3tb_160710193136wkl4568789.jpg)一下吧~我会写出更好的文章
+
+
+
 在安装Kali Linux 2.0以后，需要对有线网络进行配置，在查到的解决方案里，清一色都是用pppoe或者re-pppoe模拟连接的，然而并没有解决问题。
 
 
