@@ -9,8 +9,8 @@ title: 个人概况
 
 ### 技能
 * 语言：Java、Python、JavaScript、Markdown
-* 安全相关：Kali、sqlmap、Metasploit
-* 其它：Git、jekyll
+* 安全相关：Kali、Sqlmap、Metasploit
+* 其它：Git、Jekyll
 
 ### 项目
 
