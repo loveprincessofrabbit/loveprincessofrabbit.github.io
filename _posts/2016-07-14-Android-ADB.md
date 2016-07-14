@@ -77,6 +77,7 @@ excerpt: Android调试桥ADB介绍、Root权限、APK安装情况与Android系�
 
 ## Android逆向流程图
 
+```
 st=>start: 安卓逆向分析
 
 op1=>operation: 反编译
@@ -124,7 +125,7 @@ op3->io3
 op4->io4
 
 op4->io5
-
+```
 
 
 
