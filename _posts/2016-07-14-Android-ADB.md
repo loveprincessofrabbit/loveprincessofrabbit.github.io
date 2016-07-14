@@ -73,61 +73,6 @@ excerpt: Android调试桥ADB介绍、Root权限、APK安装情况与Android系�
 
 * `\system\etc`系统配置文件  
 
-  ​    
-
-## Android逆向流程图
-
-```
-st=>start: 安卓逆向分析
-
-op1=>operation: 反编译
-
-op2=>operation: 分析目录结构
-
-c1=>condition: 反编译
-
-c2=>condition: 分析目录结构
-
-io1=>inputoutput: 寻找其他途径
-
-c3=>condition: 有lib
-
-c4=>condition: 无lib
-
-op3=>operation: 分析SO
-
-op4=>operation: 分析Smali代码
-
-io2=>inputoutput: 静态分析
-
-io3=>inputoutput: 动态调试
-
-io4=>inputoutput: 有混淆
-
-io5=>inputoutput: 无混淆
-
-
-
-st->c1
-
-c1(yes)->c2
-
-c1(no)->io1
-
-c2(yes)->c3->op3
-
-c2(no)->c4->op4
-
-op3->io2
-
-op3->io3
-
-op4->io4
-
-op4->io5
-```
-
-
 
 
 
