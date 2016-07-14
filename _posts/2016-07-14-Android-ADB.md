@@ -6,6 +6,7 @@ category: Android逆向
 excerpt: Android调试桥ADB介绍、Root权限、APK安装情况与Android系统目录
 ---
 ## ADB介绍
+
 ### Android Debug Bridge
 连接Android手机与PC端，让用户在电脑上进行全面的操作
 
