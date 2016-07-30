@@ -6,8 +6,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 #highlighter: pygments
 
-assets: http://miaochiahao.github.io/assets
-baseurl: http://miaochiahao.github.io
+assets: https://miaochiahao.github.io/assets
+baseurl: https://miaochiahao.github.io
 
 # pagination
 paginate: 10
