@@ -69,7 +69,7 @@ public class PassByValue {
 {% endhighlight %}
 
 输出结果如下：
-{% highlight java %}
+{% highlight yml %}
 修改前属性i的值为：1
 修改后方法内i的值为：2
 修改后属性i的值为：1
