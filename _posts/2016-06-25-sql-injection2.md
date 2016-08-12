@@ -5,7 +5,7 @@ title: "SQL注入（二）"
 category: SQL注入
 excerpt: 万能密码漏洞
 ---
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg?raw=true)一下吧~我会写出更好的文章
 
 ## OR漏洞简述
 

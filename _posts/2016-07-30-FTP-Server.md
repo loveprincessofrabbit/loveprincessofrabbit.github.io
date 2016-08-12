@@ -5,7 +5,7 @@ title: "FTP服务器搭建"
 category: Server
 excerpt: 以vsftpd搭建安全的FTP服务器
 ---
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg?raw=true)一下吧~我会写出更好的文章
 
 
 ## FTP服务器手册 (Alpha2.0)
@@ -30,7 +30,7 @@ excerpt: 以vsftpd搭建安全的FTP服务器
 
 如此便可以通过`ftp://localhost`访问，此时应该能在输入系统的账号密码后，进入FTP功能。由于没有Chroot，我们默认会进入用户主目录，且能够在各级目录任意切换。
 
-![picture1](http://d3.freep.cn/3tb_160730183804noch568789.png)
+![picture1](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/ftp_1.png?raw=true)
 
 ### Vsftpd的启动模式
 
@@ -100,11 +100,11 @@ Vsftpd默认使用Stand alone方式启动
    `local_root=/srv/ftp`
    `anon_root=/srv/ftp`
    这两条命令将本地用户和匿名用户的根目录固定在`/srv/ftp`
-   ![picture2](http://d3.freep.cn/3tb_160730183804v89x568789.png)
+   ![picture2](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/ftp_2.png?raw=true)
 6. 确认ftp文件夹的权限情况：
    `cd /srv/`
    `ls -l`
-   ![picture3](http://d3.freep.cn/3tb_160730183804h02h568789.png)
+   ![picture3](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/ftp_3.png?raw=true)
    应保证755权限，保证非所有者用户不能拥有写入权利（否则chroot时会出现错误，vsftpd以及非常体贴的为我们想到了这一点），如有问题，用chmod命令进行修改
 7. 建立管理账号ftpadmin（可以管理FTP服务器，但不可登录系统）
    `sudo useradd ftpadmin -m -s /sbin/nologin` 创建管理账号，创建用户主目录（否则chroot会报错），设置为不可登录系统

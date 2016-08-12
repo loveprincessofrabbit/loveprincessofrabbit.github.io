@@ -5,7 +5,7 @@ category: SQL注入
 tags: SQL注入 渗透测试
 excerpt: 通过转化为十六进制和进行宽字节注入绕过一些安全机制
 ---
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg?raw=true)一下吧~我会写出更好的文章
 
 ## 突破magic_quotes_gpc与addslashes()
 

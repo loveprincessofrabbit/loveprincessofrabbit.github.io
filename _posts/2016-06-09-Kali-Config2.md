@@ -6,7 +6,7 @@ category: KaliLinux
 excerpt: 对Kali Linux的一些配置参考
 ---
 
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg?raw=true)一下吧~我会写出更好的文章
 
 装过很多次Kali2.0了，每次装完都要重新去搜集一些命令去调系统配置，这次装完后记录了一下，希望能给大家一些便利
 

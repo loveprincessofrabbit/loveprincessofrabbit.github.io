@@ -5,7 +5,7 @@ category: SQL注入
 tags: SQL注入 渗透测试
 excerpt: 手注查询字段数、数据库、用户、版本信息以及具体数据
 ---
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg?raw=true)一下吧~我会写出更好的文章
 
 
 一天不更就觉得是对生命的浪费啊魂淡(,,･∀･)ﾉ゛

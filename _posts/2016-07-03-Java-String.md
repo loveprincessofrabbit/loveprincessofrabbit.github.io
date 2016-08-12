@@ -5,7 +5,7 @@ category: Java
 tags: Java
 excerpt: 本文分析了在Java中连接字符串的不同方式耗时情况，以及对背后原因的分析，最终尝试探究连接字符串最高效的方式
 ---
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg?raw=true)一下吧~我会写出更好的文章
 
 ## 连接字符串的不同方式
 
