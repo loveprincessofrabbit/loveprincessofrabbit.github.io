@@ -5,7 +5,7 @@ tags: Java
 category: Java
 excerpt: 整理了一下Java传参问题
 ---
-> ~~如果觉得这篇文章写的不错，来给我[打赏鼓励](http://d3.freep.cn/3tb_160710193136wkl4568789.jpg)一下吧~我会写出更好的文章~~
+> ~~如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章~~
 >
 > 写的不好不要赏了0.0
 

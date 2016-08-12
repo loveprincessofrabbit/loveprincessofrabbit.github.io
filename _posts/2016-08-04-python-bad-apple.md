@@ -5,7 +5,7 @@ category: Python
 tags: Python
 excerpt: 听说有屏幕的地方就会有Bad Apple!!
 ---
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](http://d3.freep.cn/3tb_160710193136wkl4568789.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
 
 
 ### 思路
@@ -24,14 +24,14 @@ excerpt: 听说有屏幕的地方就会有Bad Apple!!
 ### 视频截取
 
 这个用的是KMPlayer自带的一个功能：高级捕获，能够以所需来截取视频。
-![KMPlayer](http://d3.freep.cn/3tb_1608041726361p2h568789.png)
+![KMPlayer](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/bad_apple_KMPlayer.png)
 
 经过测试最后决定：
 1. 每秒截取25帧
 2. 分辨率需要特别注意：每个字符可以看作是一个像素点，由于字符高远比宽要长，要把高度酌情缩减。最后确定了用80\*30
 
 总共截了3000+张
-![Files](http://d2.freep.cn/3tb_160804172637hk18568789.png)
+![Files](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/bad_apple_screenshots.png)
 
 ### 图像处理
 
@@ -113,7 +113,7 @@ raw_input()
 {% endhighlight %}
 
 就这样~转化好的字符画图像被写入了文件`text.txt`，总共8Mb多
-![Text.txt](http://d2.freep.cn/3tb_160804173946itij568789.png)
+![Text.txt](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/bad_apple_Picture.png)
 
 ### 文件读取
 

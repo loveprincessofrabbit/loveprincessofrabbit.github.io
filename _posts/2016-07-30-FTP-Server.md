@@ -5,7 +5,7 @@ title: "FTP服务器搭建"
 category: Server
 excerpt: 以vsftpd搭建安全的FTP服务器
 ---
-> 如果觉得这篇文章写的不错，来给我[打赏鼓励](http://d3.freep.cn/3tb_160710193136wkl4568789.jpg)一下吧~我会写出更好的文章
+> 如果觉得这篇文章写的不错，来给我[打赏鼓励](https://github.com/miaochiahao/miaochiahao.github.io/blob/master/pictures/alipay.jpg)一下吧~我会写出更好的文章
 
 
 ## FTP服务器手册 (Alpha2.0)
