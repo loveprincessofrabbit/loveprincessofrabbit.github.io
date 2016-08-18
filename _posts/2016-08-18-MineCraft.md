@@ -21,7 +21,10 @@ excerpt: 唉？有点想玩MineCraft
 
 * Java: `yum install java`
 * OpenJDK: `yum install java-1.7.0-openjdk`
+
+
 #### 文件安装
+
 * 建立文件夹：在`/home`文件夹下建立了一个`minecraft`文件夹用于存放相应的服务器文件并设置权限为777
 
 * 将[文件](http://oc42vgpoj.bkt.clouddn.com/spigot-1.8.7-R0.1-SNAPSHOT.jar)传到服务器：为了方便操作，我用SmartFTPClient建立了一个`SFTP Over SSH`方式的连接到服务器，把服务器所需的文件上传到`/home/minecraft`文件夹
