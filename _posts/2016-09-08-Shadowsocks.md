@@ -76,7 +76,7 @@ systemctl disable firewalld.service #禁用
 之前的版本：
 service iptables stop #停止
 chkconfig iptables off #禁用
-{% endhightlight %}
+{% endhighlight %}
 
 ### 查看服务端进程以及关闭服务端
 
