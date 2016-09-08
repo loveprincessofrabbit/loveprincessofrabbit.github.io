@@ -86,6 +86,9 @@ ps aux|grep ss
 kill xxx
 {% endhighlight %}
 
+
 ### 后记
 
 其实那个IPV6服务器，用命令`ping6 ipv6.google.com`还是有结果的，所以考虑能不能在IPV6隧道去免掉Google和Youtube的IPV6站的流量。以后再说啦~
+
+效果还是超群的，轻松秒杀市面主流VPN
