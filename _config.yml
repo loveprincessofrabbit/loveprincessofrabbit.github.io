@@ -6,8 +6,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 #highlighter: pygments
 
-assets: https://miaochiahao.github.io/assets
-baseurl: https://miaochiahao.github.io
+assets: http://img3.duitang.com/uploads/item/201204/02/20120402185245_3hLzc.jpeg
+baseurl: https://loveprincessofrabbit.github.io
 
 # pagination
 paginate: 10
@@ -27,8 +27,8 @@ kramdown:
     input: GFM
 highlighter: rouge
 
-title : Miao Chiahao's Blog
-tagline: 此后如竟没有炬火，我便是唯一的光，我真是学英语的
+title : Love princess of rabbit's Blog
+tagline: 我就是卖萌的
 
 defaults:
   -
@@ -83,8 +83,8 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: Miao Chiahao      ## e.g. wuchong Author name
-  intro_line1:  "I'm Miao Chiahao."    ## your introduction on the bottom of the page
+  name: pan yepeng      ## e.g. wuchong Author name
+  intro_line1:  "I'm pan yepeng."    ## your introduction on the bottom of the page
   intro_line2:  "Too simple, sometimes naive."  ## the 2nd line
   weibo: 5451714789      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier: 8266a57e  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
